@@ -3,6 +3,7 @@ import { faker } from '@faker-js/faker';
 import * as userLogining from '../fixtures/userLogining.json'
 import RegistrationGUI from '../support/Pages/RegistrationGUI';
 import AuthorizationGUI from '../support/Pages/AuthorizationGUI';
+import AuthorizationSilent from '../support/Pages/AuthorizationSilent';
 
 // userLogining.firstName = faker.name.firstName('female')
 // userLogining.lastName = faker.name.lastName() 
@@ -14,7 +15,7 @@ import AuthorizationGUI from '../support/Pages/AuthorizationGUI';
 // userLogining.pasw = faker.internet.password(4, true)
 
 describe('Test suite for Automationstore.com', () => {
-  it.skip('Registration', () => {
+  it('Registration', () => {
 
     RegistrationGUI.visitMainPage()
     RegistrationGUI.makeRegistrGui(userLogining)
@@ -28,4 +29,15 @@ describe('Test suite for Automationstore.com', () => {
     AuthorizationGUI.makeAuthorizGui(userLogining)
 
   })
+
+  it.only('AuthorizationSilent', ()=> {
+
+    AuthorizationSilent.makeSilentAuthoriz(userLogining)
+
+    cy.visit('/index.php?rt=account/account')
+    cy.log('**Verify user**')
+    cy.get('h1 span.subtext', {timeout: 20000}).should('contain', userLogining.firstName)
+
+  })
+
 })
