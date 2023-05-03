@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"ec7acbde6ef65666afa721346002b053","name":"Test suite for Automationstore.com","statistic":{"failed":1,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":3}},{"uid":"a89fb9eaefd55fd6cc3a1113bf41d0ce","name":"cypress/e2e/registrationWithPageObj.cy.js","statistic":{"failed":0,"broken":1,"skipped":0,"passed":0,"unknown":0,"total":1}}]}

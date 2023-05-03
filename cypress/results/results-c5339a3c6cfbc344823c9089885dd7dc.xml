@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="14.142" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-05-03T10:28:06" tests="0" file="cypress/e2e/registrationWithPageObj.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Test suite for Automationstore.com" timestamp="2023-05-03T10:28:06" tests="1" time="14.129" failures="0">
+    <testcase name="Test suite for Automationstore.com AuthorizationSilent" time="14.120" classname="AuthorizationSilent">
+    </testcase>
+  </testsuite>
+</testsuites>

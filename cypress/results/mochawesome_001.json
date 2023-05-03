@@ -1,0 +1,148 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-05-03T10:38:06.761Z",
+    "end": "2023-05-03T10:38:22.380Z",
+    "duration": 15619,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "530b6b51-8e9c-48d3-a873-423240378ab2",
+      "title": "",
+      "fullFile": "cypress/e2e/registrationWithPageObj.cy.js",
+      "file": "cypress/e2e/registrationWithPageObj.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1d57ed10-1934-47fb-8d80-65fbf84840b5",
+          "title": "Test suite for Automationstore.com",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Registration",
+              "fullTitle": "Test suite for Automationstore.com Registration",
+              "timedOut": null,
+              "duration": 12182,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_RegistrationGUI.default.visitMainPage();\n_RegistrationGUI.default.makeRegistrGui(userLogining);\n//console.log(userLogining)  //Using with Faker to know wich registration data it genered",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `div.menu_text`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `div.menu_text`, but never found it.\n    at RegistrationGUI.makeRegistrGui (webpack:///./cypress/support/Pages/RegistrationGUI.js:75:35)\n    at Context.eval (webpack:///./cypress/e2e/registrationWithPageObj.cy.js:21:20)",
+                "diff": null
+              },
+              "uuid": "08b50ab7-e93a-4d85-9413-49d460362f03",
+              "parentUUID": "1d57ed10-1934-47fb-8d80-65fbf84840b5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "AuthorizationGUI",
+              "fullTitle": "Test suite for Automationstore.com AuthorizationGUI",
+              "timedOut": null,
+              "duration": 2377,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_AuthorizationGUI.default.makeAuthorizGui(userLogining);",
+              "err": {},
+              "uuid": "d55117e7-63b9-4b3a-b093-58a9e7958c3b",
+              "parentUUID": "1d57ed10-1934-47fb-8d80-65fbf84840b5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "AuthorizationSilent",
+              "fullTitle": "Test suite for Automationstore.com AuthorizationSilent",
+              "timedOut": null,
+              "duration": 943,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_AuthorizationSilent.default.makeSilentAuthoriz(userLogining);\ncy.visit('/index.php?rt=account/account');\ncy.log('**Verify user**');\ncy.get('h1 span.subtext', {\n  timeout: 20000\n}).should('contain', userLogining.firstName);",
+              "err": {},
+              "uuid": "2c58a22c-1e6d-48fa-b78d-2fb764e18276",
+              "parentUUID": "1d57ed10-1934-47fb-8d80-65fbf84840b5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d55117e7-63b9-4b3a-b093-58a9e7958c3b",
+            "2c58a22c-1e6d-48fa-b78d-2fb764e18276"
+          ],
+          "failures": [
+            "08b50ab7-e93a-4d85-9413-49d460362f03"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 15502,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

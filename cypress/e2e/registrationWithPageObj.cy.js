@@ -30,7 +30,7 @@ describe('Test suite for Automationstore.com', () => {
 
   })
 
-  it.only('AuthorizationSilent', ()=> {
+  it('AuthorizationSilent', ()=> {
 
     AuthorizationSilent.makeSilentAuthoriz(userLogining)
 

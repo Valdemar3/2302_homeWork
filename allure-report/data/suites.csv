@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Wed May 03 14:22:27 EEST 2023","Wed May 03 14:22:41 EEST 2023","14165","","Test suite for Automationstore.com","","","","Registration",""
+"passed","Wed May 03 14:22:41 EEST 2023","Wed May 03 14:22:44 EEST 2023","3085","","Test suite for Automationstore.com","","","","AuthorizationGUI",""
+"passed","Wed May 03 14:22:44 EEST 2023","Wed May 03 14:22:45 EEST 2023","1182","","Test suite for Automationstore.com","","","","AuthorizationSilent",""
+"broken","Wed May 03 14:13:07 EEST 2023","Wed May 03 14:13:07 EEST 2023","0","","cypress/e2e/registrationWithPageObj.cy.js","","","","Oops...we found an error preparing this test file: cypress/e2e/registrationWithPageObj.cy.js",""
